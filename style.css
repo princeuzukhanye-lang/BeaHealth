@@ -1,0 +1,14 @@
+body.founder {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #001f3f, #0074D9);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+img {
+  margin: 20px;
+  border: 5px solid #0074D9;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00cfff;
+}
