@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Agreement - BeaHealth</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="agreement">
+  <h1>User Agreement</h1>
+  <p>
+    By using BeaHealth, you agree to the following terms:  
+    • You understand BeaHealth provides general health education, not medical diagnosis or treatment.  
+    • You agree to use the chatbot responsibly and respectfully.  
+    • You acknowledge that BeaHealth cannot replace professional medical advice.  
+    • You consent to the ethical use of technology and data protection principles guiding BeaHealth.  
+  </p>
+
+  <label>
+    <input type="checkbox" id="agreeBox"> I have read and accept all the terms
+  </label><br><br>
+
+  <button class="proceed" onclick="proceed()">Proceed</button>
+
+  <script>
+    function proceed() {
+      if (document.getElementById("agreeBox").checked) {
+        window.location.href = "chat.html";
+      } else {
+        alert("Please accept the terms before proceeding.");
+      }
+    }
+  </script>
+</body>
+</html>
