@@ -1,75 +1,82 @@
-body.founder {
+/* Blue Innovation Theme for Login Page */
+body.front {
   font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, #001f3f, #0074D9);
-  color: white;
-  text-align: center;
-  padding: 20px;
+  background: linear-gradient(to bottom, #0074D9, #001f3f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
-.continue {
-  background: #0074D9;
-  color: white;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-body.agreement {
-  font-family: Arial, sans-serif;
-  background: #f0f8ff;
-  color: #004080;
-  text-align: center;
-  padding: 20px;
-}
-
-.proceed {
-  background: green;
-  color: white;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-body.chat {
-  font-family: Arial, sans-serif;
-  background: #001f3f;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-
-#chatbox {
-  width: 80%;
-  max-width: 600px;
-  margin: 20px auto;
-  background: #0074D9;
-  border-radius: 10px;
-  padding: 20px;
-}
-
-#messages {
-  height: 300px;
-  overflow-y: auto;
-  text-align: left;
-  margin-bottom: 10px;
+.login-container {
   background: white;
-  color: black;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0, 116, 217, 0.6);
+  text-align: center;
+  width: 320px;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.logo-circle {
+  background: #0074D9;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  box-shadow: 0 0 10px #00cfff;
+}
+
+.logo-text {
+  font-size: 14px;
+  color: #004080;
+  font-weight: bold;
+}
+
+.app-title {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 28px;
+  color: #0074D9;
+  margin-bottom: 20px;
+}
+
+.form-box input {
+  width: 90%;
   padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #0074D9;
   border-radius: 5px;
 }
 
-.message {
-  margin: 5px 0;
+button {
+  background: #0074D9;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 95%;
+  font-size: 16px;
 }
 
-.user {
-  color: blue;
+button:hover {
+  background: #005bb5;
 }
 
-.bot {
-  color: green;
+a {
+  color: #0074D9;
+  text-decoration: none;
 }
