@@ -7,15 +7,25 @@
 </head>
 <body class="front">
   <div class="login-container">
-    <h1 class="logo">BeaHealth</h1>
-    <div class="form-box">
+    <!-- Logo Section -->
+    <div class="logo-box">
+      <div class="logo-circle">B</div>
+      <span class="logo-text">from Beatrice Technologies (Pty) Ltd</span>
+    </div>
+
+    <!-- App Title -->
+    <h1 class="app-title">BeaHealth</h1>
+
+    <!-- Login Form -->
+    <div id="loginBox" class="form-box">
       <input type="text" id="username" placeholder="Username"><br>
       <input type="password" id="password" placeholder="Password"><br>
       <button onclick="login()">Log In</button>
       <p>Don't have an account yet? <a href="#" onclick="showRegister()">Register</a></p>
     </div>
 
-    <div class="form-box" id="registerBox" style="display:none;">
+    <!-- Register Form -->
+    <div id="registerBox" class="form-box" style="display:none;">
       <input type="text" id="newUsername" placeholder="Choose a Username"><br>
       <input type="password" id="newPassword" placeholder="Choose a Password"><br>
       <button onclick="register()">Register</button>
