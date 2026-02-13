@@ -1,37 +1,34 @@
-function showRegister() {
-  document.getElementById("registerBox").style.display = "block";
-  document.getElementById("loginBox").style.display = "none";
+function sendMessage() {
+  let input = document.getElementById("userInput").value;
+  if (input.trim() === "") return;
+
+  let messages = document.getElementById("messages");
+
+  let userMsg = document.createElement("div");
+  userMsg.className = "message user";
+  userMsg.textContent = "You: " + input;
+  messages.appendChild(userMsg);
+
+  let botMsg = document.createElement("div");
+  botMsg.className = "message bot";
+  botMsg.textContent = "BeaHealth: " + getResponse(input);
+  messages.appendChild(botMsg);
+
+  document.getElementById("userInput").value = "";
+  messages.scrollTop = messages.scrollHeight;
 }
 
-function showLogin() {
-  document.getElementById("registerBox").style.display = "none";
-  document.getElementById("loginBox").style.display = "block";
-}
+function getResponse(input) {
+  input = input.toLowerCase();
 
-function register() {
-  let newUsername = document.getElementById("newUsername").value;
-  let newPassword = document.getElementById("newPassword").value;
-
-  if (newUsername && newPassword) {
-    localStorage.setItem("username", newUsername);
-    localStorage.setItem("password", newPassword);
-    alert("Registration successful! You can now log in.");
-    showLogin();
-  } else {
-    alert("Please enter both a username and password.");
+  if (input.includes("nutrition")) {
+    return "A balanced diet with fruits, vegetables, proteins, and whole grains is essential for good health.";
   }
-}
-
-function login() {
-  let username = document.getElementById("username").value;
-  let password = document.getElementById("password").value;
-
-  let storedUser = localStorage.getItem("username");
-  let storedPass = localStorage.getItem("password");
-
-  if (username === storedUser && password === storedPass) {
-    window.location.href = "founder.html";
-  } else {
-    alert("Invalid login. Please try again or register.");
+  if (input.includes("exercise")) {
+    return "Regular physical activity strengthens your body and mind. Aim for at least 30 minutes daily.";
   }
+  if (input.includes("mental health")) {
+    return "Mental health matters. Practice self-care, talk to trusted people, and seek professional help when needed.";
+  }
+  return "I’m here to help with health education. Could you ask me something about nutrition, exercise, or wellbeing?";
 }
