@@ -155,3 +155,77 @@ body.chat {
 .input-area button:hover {
   background: #005bb5;
 }
+
+/* ChatGPT-inspired chatbot styling */
+body.chat {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+#chatbox {
+  width: 80%;
+  max-width: 700px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+#messages {
+  height: 400px;
+  overflow-y: auto;
+  text-align: left;
+  margin-bottom: 10px;
+  background: #fafafa;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.message {
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.message.user {
+  background: #0074D9;
+  color: white;
+  margin-left: auto;
+}
+
+.message.bot {
+  background: #e0e0e0;
+  color: #333;
+  margin-right: auto;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-area button {
+  background: #0074D9;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-area button:hover {
+  background: #005bb5;
+  }
